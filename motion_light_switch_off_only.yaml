@@ -11,12 +11,13 @@ blueprint:
           domain: binary_sensor
           device_class: occupancy
     light_target:
-      name: Light Switch
+      name: Light 
       selector:
         target:
           entity:
-            domain: switch
-            domain: light
+            domain: 
+              - switch
+              - light
     no_motion_wait:
       name: Wait time
       description: Time to leave the light on after last occupancy is detected.
